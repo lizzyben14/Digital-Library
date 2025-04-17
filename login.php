@@ -66,7 +66,7 @@ if (isset($_POST['login-btn'])) {
             <option value="user">User</option>
         </select>
            <input type="submit" name="login-btn" value="Login now" class="btn">   
-           <p> Don't have an account?</p> <a href="register.php">Register now</a></p>  <!--Code taken from ChatGPT to link pages-->
+           <p> Don't have an account?</p> <a href="register.php">Register now</a></p>  
         </form>
     </div>
 

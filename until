@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <!---->
+       
         <link rel="stylesheet" link href="assets/home.css">
         <title></title>
     </head>
     <body>
-       <!--Start of Header-->
+       
        <header>
            <div id="quicklinks">
               <ul>
@@ -52,7 +52,7 @@
        <section class="books-section">
         <h2 id="avail-books">Available Books</h2>
         <div class="books-container">
-            <!-- Add book details here -->
+         
             <div class="book">
                 <h2>Book Title</h2>
                 <p>Genre</p>
