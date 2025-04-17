@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - User Dashboard</title>
+    <link rel="stylesheet" href="assets/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+
+</head>
+<body class="home">
+    <header>
+        <div class="logo"><span><h2>MY LIBRARY </h2></span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.php" onclick="window.location.href='logout.php'">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <form method="GET">
+                <div class="search-container">
+                    <input type="text" name="search" id="search-input" placeholder="Search for books">
+                    <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filters">
+                    <div class="searchBy">
+                        <p>Search By:</p>
+                    </div>
+                    <div class="filterBy-options">
+                        <select name="author" id="author">
+                            <option value="">Author</option>
+                            <option value="John Marrs">John Marrs</option>
+                            <option value="Frank Herbert">Frank Herbert</option>
+                            <option value="Octavia E. Butler">Octavia E. Butler</option>
+                            <option value="Bram Stoker">Bram Stoker</option>
+                            <option value="Stephen King">Stephen King</option>
+                            <option value="Ray Bradbury">Ray Bradbury</option>
+                            <option value="Agatha Christie">Agatha Christie</option>
+                            <option value="Gillian Flynn">Gillian Flynn</option>
+                            <option value="Nora Roberts">Nora Roberts</option>
+                            <option value="Alyssa Cole">Alyssa Cole</option>
+                            <option value="Tomi Adeyemi">Tomi Adeyemi</option>
+                            <option value="Lucy Foley">Lucy Foley</option>
+                            <option value="Ruth Ware">Ruth Ware</option>
+                            <option value="J.K. Rowling">J.K. Rowling</option>
+                            <option value="Ted Dekker">Ted Dekker</option>
+                            <option value="Francine Rivers">Francine Rivers</option>
+                            <!-- Add author options here -->
+                        </select>
+                    
+                    <div class="filterBy">
+                        <select name="genre" id="genre"> 
+                            <option value="">Genre</option>
+                            <option value="scifi">Sci-Fi</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="romance">Romance</option>
+                            <option value="horror">Horror</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="nonfiction">Non-Fiction</option>
+                            <option value="christian">Christian</option>
+                        </select>
+                        <button type="submit" id="filter-button">Filter</button>
+                    </div>
+                    </div>
+                    </div>
+                    </form>       
+        </section>
+<div class="image-container">
+    <div class="image-box">
+        <a href="scifi.html">
+        <img src="assets/images/scifilogo.jpg" alt="Sci-Fi" width="200">
+        <div class="image-text">Sci-Fi</div>
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="fantasy.html">
+        <img src="assets/images/fantasylogo.jpg" alt="Fantasy" width="200">
+        <div class="image-text">Fantasy</div>   
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="mystery.html">
+        <img src="assets/images/mysterylogo.jpg" alt="Mystery" width="200">
+        <div class="image-text">Mystery</div>
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="romance.html">
+        <img src="assets/images/romancelogo.jpg" alt="Romance" width="200">
+        <div class="image-text">Romance</div>
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="horror.html">
+        <img src="assets/images/horrorlogo.jpg" alt="Horror" width="200">
+        <div class="image-text">Horror</div>
+        </a>
+    </div>
+    <div class="image-box">
+        <a href="thriller.html">
+        <img src="assets/images/thrillerlogo2.jpg" alt="Thriller" width="200">
+        <div class="image-text">Thriller</div>
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="nonfiction.html">
+        <img src="assets/images/nonfictionlogo.jpg" alt="Non-Fiction" width="200">
+        <div class="image-text">Non-Fiction</div>
+    </a>
+    </div>
+    <div class="image-box">
+        <a href="christian.html">
+        <img src="assets/images/christianlogo.jpg" alt="Christian" width="200">
+        <div class="image-text">Christian</div>
+    </a>
+    </div>
+       
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LMS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
