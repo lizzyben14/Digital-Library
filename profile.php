@@ -48,16 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     }
 
 
-$borrowed_books_query = "
-SELECT b.title, bb.borrowed_date, bb.returned_date
-FROM borrowed_books bb
-JOIN books b ON bb.book_id = b.book_id
-WHERE bb.user_id = {$user['user_id']}
-";
-$borrowed_books = $conn->query($borrowed_books_query);
-if (!$borrowed_books) {
-    die("Error in query: " . $conn->error);
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -99,28 +90,6 @@ if (!$borrowed_books) {
                 <button type="submit" name="update_profile" class="btn">Update Profile</button>
             </form>
          </div>
-        </section>
-
-        <section>
-            <h2>Borrowed Books</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Borrowed Date</th>
-                        <th>Returned Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php while ($book = $borrowed_books->fetch_assoc()): ?>
-                        <tr>
-                            <td><?php echo htmlspecialchars($book['title']); ?></td>
-                            <td><?php echo htmlspecialchars($book['borrowed_date']); ?></td>
-                            <td><?php echo htmlspecialchars($book['returned_date'] ?: 'Not Returned'); ?></td>
-                        </tr>
-                    <?php endwhile; ?>
-                </tbody>
-            </table>
         </section>
     </main>
 </html>
